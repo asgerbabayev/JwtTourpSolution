@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.DataAccess\\TourP.DataAccess.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj",
+        "projectName": "TourP.Core",
+        "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj",
+        "packagesPath": "C:\\Users\\asger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\asger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.DataAccess\\TourP.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.DataAccess\\TourP.DataAccess.csproj",
+        "projectName": "TourP.DataAccess",
+        "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.DataAccess\\TourP.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\asger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\asger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj": {
+                "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj"
+              },
+              "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\TourP.Entities.csproj": {
+                "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\TourP.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\TourP.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\TourP.Entities.csproj",
+        "projectName": "TourP.Entities",
+        "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\TourP.Entities.csproj",
+        "packagesPath": "C:\\Users\\asger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\asger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj": {
+                "projectPath": "C:\\Users\\asger\\OneDrive\\Masaüstü\\TourpSolution\\TourPBackend\\TourP.Core\\TourP.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

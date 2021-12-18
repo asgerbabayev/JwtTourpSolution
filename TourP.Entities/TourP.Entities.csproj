@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\ContentDTO\" />
+    <Folder Include="DTOs\EntryDTO\" />
+    <Folder Include="DTOs\StepsDTO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TourP.Core\TourP.Core.csproj" />
+  </ItemGroup>
+
+</Project>
