@@ -12,7 +12,7 @@ namespace TourP.Business.Constants
         internal static string AdsDeleted = "";
         internal static string ContentAdded = "";
         internal static string UserCreatedVerifyMail = "User created. Check mail. Click link and verify.";
-        internal static string UserAlreadyCreated = "User already created, please login.";
+        internal static string EmailUsedBefore = "This email address has been used before";
         internal static string VerifyMail = "User already created, please verify your mail.";
         internal static string InvalidUser = "Invalid email or password.";
         internal static string InvalidEmail = "Email doesn't exists.";

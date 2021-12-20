@@ -17,11 +17,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
         {
             using (var context = new EfCoreDbContext())
             {
-                if (await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Password == user.Password && x.IsConfirmed == true) != null)
-                {
-                    return true;
-                }
-                return false;
+                return await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Password == user.Password && x.IsConfirmed == true) != null ? true : false;
             }
         }
 
@@ -29,11 +25,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
         {
             using (var context = new EfCoreDbContext())
             {
-                if (await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Password == user.Password && x.IsConfirmed == false) != null)
-                {
-                    return true;
-                }
-                return false;
+                return await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.Password == user.Password && x.IsConfirmed == false) != null ? true : false;
             }
         }
 
@@ -41,11 +33,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
         {
             using (var context = new EfCoreDbContext())
             {
-                if (await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.IsConfirmed) != null)
-                {
-                    return true;
-                }
-                return false;
+                return await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email && x.IsConfirmed) != null ? true : false;
             }
         }
 
@@ -53,11 +41,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
         {
             using (var context = new EfCoreDbContext())
             {
-                if (await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email) != null)
-                {
-                    return true;
-                }
-                return false;
+                return await context.Users.FirstOrDefaultAsync(x => x.Email == user.Email) != null ? true : false;
             }
         }
 
@@ -66,11 +50,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
             using (var context = new EfCoreDbContext())
             {
                 User user = context.Users.Where(x => x.Email == email).FirstOrDefault();
-                if (user != null)
-                {
-                    return user;
-                }
-                return null;
+                return user != null ? user : null;
             }
         }
 
@@ -79,11 +59,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
             using (var context = new EfCoreDbContext())
             {
                 User user = context.Users.Where(x => x.Email == email && x.IsConfirmed == false).FirstOrDefault();
-                if (user != null)
-                {
-                    return user;
-                }
-                return null;
+                return user != null ? user : null;
             }
         }
 
@@ -92,11 +68,7 @@ namespace TourP.DataAccess.Concrete.EntityFramework
             using (var context = new EfCoreDbContext())
             {
                 user = context.Users.Where(x => x.Email == user.Email).FirstOrDefault();
-                if (user != null)
-                {
-                    return user;
-                }
-                return null;
+                return user != null ? user : null;
             }
         }
     }

@@ -38,7 +38,7 @@ namespace TourP.Business.Concrete
             user.Password = Util.ComputeSha256Hash(user.Password);
             if (await _userDal.CheckCreatingUser(user) == true)
             {
-                return new SuccessResult(Messages.UserAlreadyCreated);
+                return new SuccessResult(Messages.EmailUsedBefore);
             }
             else if (await _userDal.CheckIsConfirmedCreateUser(user) == true)
             {
